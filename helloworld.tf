@@ -48,5 +48,15 @@ variable "mysecuritygrouplist" {
 }
 
 output "mysgoutput" {
-  value = "${var.mysecuritygrouplist[0]}"
+    value = "${var.mysecuritygrouplist[0]}"
+}
+
+
+//here we test bool data type
+variable "testbool" {
+    default = true  
+}
+
+output "boolouput" {
+    value = "${var.testbool}"
 }
